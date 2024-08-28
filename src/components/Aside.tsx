@@ -6,7 +6,7 @@ const Aside = () => {
         <aside>
             <ul>
                 <li>
-                    <NavLink to="/learn">Quick Start</NavLink>
+                    <NavLink end to="/learn">Quick Start</NavLink>
                 </li>
                 <li>
                     <NavLink to="/learn/Thinking-in-react">Thinking in React</NavLink>

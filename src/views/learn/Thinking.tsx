@@ -2,8 +2,8 @@
 const ThinkingInReact = () => {
   return (
     <div>
-      <div>Quik Starrt</div>
-      <h1>Quick Start</h1>
+      
+      <h1>Thinnking in react</h1>
     </div>
   )
 }

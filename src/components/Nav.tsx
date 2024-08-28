@@ -9,7 +9,7 @@ const Nav = ({}:IProps) => {
     <nav>
         <ul>
             <li>
-                <NavLink to="/">Home</NavLink>
+                <NavLink to="/" className="text-red-600 ">Home</NavLink>
             </li>
             <li>
                 <NavLink to="/contact">Contact</NavLink>
@@ -19,6 +19,12 @@ const Nav = ({}:IProps) => {
             </li>
             <li>
                 <NavLink to="/learn">learn</NavLink>
+            </li>
+            <li>
+                <NavLink to="/cont">contrabiute</NavLink>
+            </li>
+            <li>
+                <NavLink to="/login">login</NavLink>
             </li>
         </ul>
     </nav>
