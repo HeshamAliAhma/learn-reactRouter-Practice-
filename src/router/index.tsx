@@ -10,6 +10,7 @@ import Installation from "../views/learn/Installation";
 import Cont from "../views/Cont";
 import Login from "../views/Login";
 import Prodect from "../auth/Prodect";
+import NotFound from "../errors/NotFound";
 
 const isLogin = false
 
@@ -18,12 +19,12 @@ const router = createBrowserRouter(createRoutesFromElements(
         <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />
             <Route path="contact" element={<ContactPage />} />
-            <Route path="about" element={<AboutPage />} />
+            <Route path="about" element={<AboutPage />} errorElement={<div>error</div>}/>
             <Route path="learn" element={<LearnLayout />} />
             <Route path="cont"
                 element={<Prodect isLogin={isLogin} RedirectPath={"/login"}>
                     <Cont />
-                </Prodect>} />
+                </Prodect>}/>
             <Route path="login"
                 element={<Prodect isLogin={!isLogin} RedirectPath={"/cont"}>
                     <Login />
@@ -37,6 +38,8 @@ const router = createBrowserRouter(createRoutesFromElements(
             <Route path="installation" element={<Installation />} />
         </Route>
 
+
+        <Route path="*" element={<NotFound />}/>
     </>
 
 ));
